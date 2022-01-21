@@ -331,6 +331,7 @@ footer .logo {
 }
 .portfolio-item-content {
   width: calc((100% - 60px) / 3);
+  border: 1px solid #eeeeee;
 }
 .portfolio-item-text {
   padding-top: 20px;
