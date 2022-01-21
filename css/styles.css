@@ -19,6 +19,29 @@
   --footer-backgr-color: #2f303a;
   --footer-address-color: #ffffff;
   --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --hero-backgr-color: #2f303a;
+  --our-team-backgr-color: #f5f4fa;
+  --our-team-cards-backgr-color: #ffffff;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+button {
+  cursor: pointer;
+}
+img {
+  display: block;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -33,9 +56,19 @@ ul {
 a {
   text-decoration: none;
 }
+.conteiner {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
 /* ---------HEADER--------- */
 header {
   background-color: var(--header-backgr-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo {
   font-family: "Raleway";
@@ -85,15 +118,19 @@ header {
 .hero {
   align-items: center;
   text-align: center;
+  background-color: var(--hero-backgr-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 .main-titele {
-  background-color: var(--basic-text-color);
+  /* background-color: var(--basic-text-color); */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-title-color);
+  margin-bottom: 30px;
 }
 .hero-btn {
   font-family: inherit;
@@ -105,15 +142,21 @@ header {
   color: var(--secondary-btn-color);
   background-color: var(--btn--backgr-color);
   cursor: pointer;
+  margin: 0 auto;
 }
 /* --------FEATURES-------- */
-.features-title-item {
+.features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.conteiner .features-title-item {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--basic-title-color);
+  margin-bottom: 10px;
 }
 .features-text-item {
   font-size: 14px;
@@ -122,6 +165,9 @@ header {
   color: var(--basic-text-color);
 }
 /* WHAT ARE WE DOING & OUR TEAM*/
+.our-work {
+  padding-bottom: 94px;
+}
 .our-work-title,
 .our-team-title {
   font-weight: 700;
@@ -130,6 +176,12 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--basic-title-color);
+  margin-bottom: 50px;
+}
+.our-team {
+  background-color: var(--our-team-backgr-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team-name {
   font-weight: 500;
@@ -138,6 +190,7 @@ header {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--basic-title-color);
+  margin-bottom: 10px;
 }
 .our-team-proffetions {
   font-size: 16px;
@@ -146,15 +199,28 @@ header {
   letter-spacing: 0.03em;
   color: var(--basic-text-color);
 }
+.our-team-card-text {
+  background-color: var(--our-team-cards-backgr-color);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 /* ---------FOOTER--------- */
 footer {
   background: var(--footer-backgr-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+footer .logo {
+  margin-bottom: 20px;
 }
 .footer-logo-accent {
   color: var(--footer-logo-accent-color);
 }
 .address {
   font-style: normal;
+}
+.address-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 .address-contact-link {
   font-style: inherit;
@@ -172,6 +238,17 @@ footer {
   color: var(--footer-address-color);
 }
 /*---------PORTFOLIO--------- */
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.portfolio-filtr {
+  margin-bottom: 34px;
+}
+.portfolio-item-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 .portfolio-filtr-btn {
   font-style: inherit;
   font-weight: 500;
@@ -199,6 +276,7 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--basic-title-color);
+  margin-bottom: 4px;
 }
 .portfolio-filtr-item {
   font-size: 16px;
