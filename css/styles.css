@@ -10,7 +10,7 @@
   --header-hover-color: #2196f3;
   --header-logo-color: #000000;
   --header-contact-color: #757575;
-  --header-backgr-color: #ececec;
+  --header-backgr-color: #ffffff;
   --btn-color: #f5f4fa;
   --btn-text-color: #212121;
   --btn--backgr-color: #2196f3;
@@ -55,6 +55,10 @@ ul {
 }
 a {
   text-decoration: none;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .conteiner {
   width: 1200px;
@@ -173,6 +177,7 @@ header {
   min-width: 200px;
   height: 50px;
   border-radius: 4px;
+  border: none;
   margin: 0 auto;
   padding: 10px 32px;
   font-family: inherit;
@@ -187,8 +192,7 @@ header {
 }
 /* --------FEATURES-------- */
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 0;
 }
 .features-title {
   display: none;
@@ -221,7 +225,6 @@ header {
 }
 /* WHAT ARE WE DOING & OUR TEAM*/
 .our-work {
-  padding-bottom: 94px;
 }
 .our-work-img {
   display: flex;
@@ -242,8 +245,6 @@ header {
 }
 .our-team {
   background-color: var(--our-team-backgr-color);
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .our-team-list {
   display: flex;
@@ -281,19 +282,18 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-footer .logo {
-  margin-bottom: 20px;
-}
+
 .footer-logo-accent {
   color: var(--footer-logo-accent-color);
 }
 .address {
+  margin-top: 20px;
   font-style: normal;
 }
-.address-list:not(:last-child) {
-  margin-bottom: 9px;
-}
+
 .address-contact-link {
+  display: inline-block;
+  margin-top: 9px;
   font-style: inherit;
   font-size: 14px;
   line-height: 1.71;
@@ -309,10 +309,7 @@ footer .logo {
   color: var(--footer-address-color);
 }
 /*---------PORTFOLIO--------- */
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
+
 .portfolio-title {
   display: none;
 }
@@ -320,7 +317,7 @@ footer .logo {
   display: flex;
   justify-content: center;
   margin-right: -8px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 .portfolio-filtr-btn {
   margin-right: 8px;
@@ -332,15 +329,17 @@ footer .logo {
 }
 .portfolio-item-content {
   width: calc((100% - 60px) / 3);
-  border: 1px solid #eeeeee;
 }
 .portfolio-item-text {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 .portfolio-filtr-btn {
   padding: 6px 22px;
   border-radius: 4px;
+  border: none;
   font-style: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -363,7 +362,7 @@ footer .logo {
   margin-right: 30px;
   margin-bottom: 30px;
 }
-.portfolio-item-content:nth-child(3n) {
+.portfolio-item-content :nth-child(3n) {
   margin-right: 0;
 }
 .portfolio-item-title {
