@@ -328,7 +328,7 @@ footer {
   margin-bottom: -30px;
 }
 .portfolio-item-content {
-  width: calc((100% - 60px) / 3);
+  width: calc(100% / 3 - 30px);
 }
 .portfolio-item-text {
   padding: 20px 24px;
@@ -366,12 +366,16 @@ footer {
   margin-right: 0;
 }
 .portfolio-item-title {
+  display: inline-block;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--basic-title-color);
   margin-bottom: 4px;
+}
+.portfolio-item-text {
+  width: 370px;
 }
 .portfolio-filtr-item {
   font-size: 16px;
